@@ -342,8 +342,8 @@ html body header {
 }
 
 html body header .header_wrap {
-  max-width: 1060px;
-  width: 100%;
+  max-width: 1500px;
+  width: 95%;
   margin: 0 auto;
   padding: 32px 0 31px;
   /*block*/
@@ -412,6 +412,7 @@ html body header .header_wrap .header_block .header_info .header_contact {
   text-align: center;
   padding-right: 24.4px;
   border-right: 1px solid #6B7483;
+  font-size: 18px;
 }
 
 @media (max-width: 1024px) {
@@ -424,6 +425,8 @@ html body header .header_wrap .header_block .header_info .header_contact {
 html body header .header_wrap .header_block .header_info .header_tel {
   padding-left: 25.6px;
   margin-right: 23px;
+  font-size: 20px;
+  /*area*/
 }
 
 @media (max-width: 1024px) {
@@ -432,14 +435,23 @@ html body header .header_wrap .header_block .header_info .header_tel {
   }
 }
 
-html body header .header_wrap .header_block .header_info .header_tel p span {
+html body header .header_wrap .header_block .header_info .header_tel .area {
+  font-size: 18px;
+  /*span*/
+}
+
+html body header .header_wrap .header_block .header_info .header_tel .area span {
   margin-left: 12px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
+  font-size: 20px;
+  /*img*/
 }
 
-html body header .header_wrap .header_block .header_info .header_tel p span img {
-  width: 13px;
+html body header .header_wrap .header_block .header_info .header_tel .area span img {
+  width: 19px;
+  height: 18px;
+  margin-right: 2px;
 }
 
 html body header .header_wrap .header_block .header_info .btn {
@@ -533,6 +545,7 @@ html body header .header_wrap .header_nav ul li a {
           transform: skewX(-150deg);
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 0.9px;
 }
 
 html body header .header_wrap .header_nav ul li:last-child {
@@ -908,7 +921,7 @@ html body .top_block .top_block_wrap .concept_wrap .concept_text_block {
 html body .top_block .top_block_wrap .concept_wrap .concept_text_block .concept_en {
   font-size: 34px;
   color: #F79E46;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.85px;
   font-family: 'Raleway', sans-serif;
 }
@@ -934,6 +947,8 @@ html body .content {
 html body .content_wrap {
   padding-top: 264px;
   padding-bottom: 105px;
+  background-image: url(../img/front/background.png);
+  background-size: 100% 100%;
   /*service_block*/
   /*first*/
   /*first*/
@@ -1054,7 +1069,7 @@ html body .content_wrap .service_block .box #third_title {
 
 html body .content_wrap .service_block .box .text_area {
   text-align: left;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 2;
   letter-spacing: 0.375px;
   line-height: 1.7;
@@ -1363,14 +1378,14 @@ html body .card_block .card_wrap .card .card_tag {
 }
 
 html body .card_block .card_wrap .card .card_tag img {
-  width: 77.2%;
+  width: 77.5%;
 }
 
 html body .card_block .card_wrap .card .card_tag .card_title {
   margin: 29px 0 23px 0;
   font-size: 20px;
   color: #222222;
-  letter-spacing: 0.2px;
+  letter-spacing: 2px;
   font-weight: 900;
 }
 
@@ -1379,6 +1394,7 @@ html body .card_block .card_wrap .card .card_tag .card_text {
   text-align: left;
   letter-spacing: 0.75px;
   line-height: 1.8;
+  color: #222222;
 }
 
 html body .card_block .card_wrap .card .btn {
@@ -1470,7 +1486,7 @@ html body .card_block .card_wrap .card:hover .btn a {
 }
 
 html body .topic {
-  padding-top: 125px;
+  padding-top: 140px;
   /*wrap*/
 }
 
@@ -1483,7 +1499,7 @@ html body .topic {
 html body .topic_wrap {
   width: 710px;
   margin: 0 auto;
-  padding-bottom: 130px;
+  padding-bottom: 137px;
   /*topic_title*/
   /*btn*/
 }
@@ -1504,9 +1520,9 @@ html body .topic_wrap .topic_title {
   font-size: 45px;
   color: #222222;
   margin-bottom: 35px;
-  letter-spacing: 1.1px;
+  letter-spacing: 1.125px;
   text-align: center;
-  font-weight: 900;
+  font-weight: 800;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -1517,7 +1533,7 @@ html body .topic_wrap .topic_title {
 }
 
 html body .topic_wrap .article_wrap {
-  margin-bottom: 55.5px;
+  margin-bottom: 58.5px;
   /*articlewrap*/
 }
 

@@ -340,12 +340,19 @@ html body header {
 }
 
 html body header .header_wrap {
-  max-width: 1060px;
-  width: 100%;
+  max-width: 1500px;
+  width: 95%;
   margin: 0 auto;
   padding: 32px 0 31px;
   /*block*/
   /*nav*/
+}
+
+@media (max-width: 1024px) {
+  html body header .header_wrap {
+    max-width: 1024px;
+    width: 95%;
+  }
 }
 
 html body header .header_wrap .header_block {
@@ -376,6 +383,12 @@ html body header .header_wrap .header_block .header_logo h1 {
   /*logo_sub*/
 }
 
+@media (max-width: 1024px) {
+  html body header .header_wrap .header_block .header_logo h1 {
+    font-size: 30px;
+  }
+}
+
 html body header .header_wrap .header_block .header_logo h1 .header_logo_sub {
   display: block;
   font-size: 15px;
@@ -397,27 +410,59 @@ html body header .header_wrap .header_block .header_info .header_contact {
   text-align: center;
   padding-right: 24.4px;
   border-right: 1px solid #6B7483;
+  font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  html body header .header_wrap .header_block .header_info .header_contact {
+    padding-right: 12px;
+    font-size: 14px;
+  }
 }
 
 html body header .header_wrap .header_block .header_info .header_tel {
   padding-left: 25.6px;
   margin-right: 23px;
+  font-size: 20px;
+  /*area*/
 }
 
-html body header .header_wrap .header_block .header_info .header_tel p span {
+@media (max-width: 1024px) {
+  html body header .header_wrap .header_block .header_info .header_tel {
+    display: none;
+  }
+}
+
+html body header .header_wrap .header_block .header_info .header_tel .area {
+  font-size: 18px;
+  /*span*/
+}
+
+html body header .header_wrap .header_block .header_info .header_tel .area span {
   margin-left: 12px;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
+  font-size: 20px;
+  /*img*/
 }
 
-html body header .header_wrap .header_block .header_info .header_tel p span img {
-  width: 13px;
+html body header .header_wrap .header_block .header_info .header_tel .area span img {
+  width: 19px;
+  height: 18px;
+  margin-right: 2px;
 }
 
 html body header .header_wrap .header_block .header_info .btn {
   width: 218px;
   margin: 0 auto;
   /*a*/
+}
+
+@media (max-width: 1024px) {
+  html body header .header_wrap .header_block .header_info .btn {
+    margin-left: 10px;
+    width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -471,6 +516,16 @@ html body header .header_wrap .header_nav ul {
       -ms-flex-pack: center;
           justify-content: center;
   /*li*/
+  /*last-child*/
+}
+
+@media (max-width: 1024px) {
+  html body header .header_wrap .header_nav ul {
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 650px;
+  }
 }
 
 html body header .header_wrap .header_nav ul li {
@@ -488,6 +543,10 @@ html body header .header_wrap .header_nav ul li a {
           transform: skewX(-150deg);
   font-size: 18px;
   font-weight: bold;
+}
+
+html body header .header_wrap .header_nav ul li:last-child {
+  border-right: none;
 }
 
 html body .mainvisual {
@@ -532,6 +591,8 @@ html body .mainvisual_wrap .mv_inner_text .top_inner_title {
 
 html body .content {
   margin-top: 85px;
+  margin-right: 40px;
+  margin-left: 40px;
   /*box*/
 }
 
@@ -545,6 +606,12 @@ html body .content_box {
   border-radius: 41px;
   /*h2*/
   /*reservation_box*/
+}
+
+@media (max-width: 1024px) {
+  html body .content_box {
+    padding: 94px 80px 90px 80px;
+  }
 }
 
 html body .content_box h2 {
@@ -569,34 +636,113 @@ html body .content_box .reservation_box {
   /*link_block*/
 }
 
+@media (max-width: 768px) {
+  html body .content_box .reservation_box {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .content_box .reservation_box {
+    padding: 30px 30px;
+  }
+}
+
 html body .content_box .reservation_box .link_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 20px;
+  /*tab*/
   /*btn*/
 }
 
+@media (max-width: 768px) {
+  html body .content_box .reservation_box .link_block {
+    display: block;
+  }
+}
+
 html body .content_box .reservation_box .link_block img {
-  width: 150px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  html body .content_box .reservation_box .link_block img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .content_box .reservation_box .link_block img {
+    margin-bottom: 15px;
+  }
+}
+
+html body .content_box .reservation_box .link_block .box_text_area {
+  margin-left: 30px;
+  /*tab*/
+}
+
+@media (max-width: 768px) {
+  html body .content_box .reservation_box .link_block .box_text_area {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 html body .content_box .reservation_box .link_block .box_text_area h3 {
   font-size: 25px;
+  margin-bottom: 10px;
+  /*tab*/
+}
+
+@media (max-width: 1024px) {
+  html body .content_box .reservation_box .link_block .box_text_area h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .content_box .reservation_box .link_block .box_text_area h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body .content_box .reservation_box .link_block .box_text_area h3 {
+    margin-bottom: 10px;
+  }
 }
 
 html body .content_box .reservation_box .link_block .box_text_area .time {
   font-size: 20px;
 }
 
+html body .content_box .reservation_box .link_block .btn {
+  margin-left: 30px;
+  width: 104px;
+  /*tab*/
+}
+
+@media (max-width: 768px) {
+  html body .content_box .reservation_box .link_block .btn {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .content_box .reservation_box .link_block .btn {
+    width: 100%;
+  }
+}
+
 html body .content_box .reservation_box .link_block .btn p {
   background-color: #4abaa7;
   color: #FFF;
   text-align: center;
-  padding: 12px 20px;
+  padding: 12px 0px;
   border-radius: 2px;
 }
 

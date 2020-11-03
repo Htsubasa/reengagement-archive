@@ -38,8 +38,8 @@ body{
   
   header{
     .header_wrap{
-      max-width: 1060px;
-      width: 100%;
+      max-width: 1500px;
+      width: 95%;
       margin: 0 auto;
       padding: 32px 0 31px ;
 
@@ -54,6 +54,7 @@ body{
     
       .header_logo{
         display: flex;
+
         img{
           width: 70px;
         }/*img*/
@@ -82,6 +83,8 @@ body{
           text-align: center;
           padding-right: 24.4px;
           border-right: 1px solid #6B7483;
+          font-size: 18px;
+
 
           @include pc{
             padding-right: 12px;
@@ -93,22 +96,29 @@ body{
         .header_tel{
           padding-left: 25.6px;
           margin-right: 23px;
+          font-size: 20px;
 
           @include pc{
             display: none;
           }
 
-          p{
+          .area{
+            font-size: 18px;
+
             
             span{
               margin-left: 12px;
               font-family: 'Oswald', sans-serif;
               font-weight: 500;
+              font-size: 20px;
+
               img{
-                width: 13px;
-              }
-            }
-          }
+                width: 19px;
+                height: 18px;
+                margin-right: 2px;
+              }/*img*/
+            }/*span*/
+          }/*area*/
 
         }
 
@@ -183,6 +193,7 @@ body{
             transform: skewX(-150deg);
             font-size: 18px;
             font-weight: bold;
+            letter-spacing: 0.9px;
           }
 
         }/*li*/
@@ -507,7 +518,7 @@ body{
           .concept_en{
             font-size: 34px;
             color: #F79E46;
-            font-weight: 900;
+            font-weight: 800;
             letter-spacing: 0.85px;
             font-family: 'Raleway', sans-serif;
         }
@@ -539,6 +550,8 @@ body{
   &_wrap{
       padding-top: 264px;
       padding-bottom: 105px;
+      background-image: url(../img/front/background.png);
+      background-size: 100% 100%;
 
       @include tab{
           padding-top: 500px;
@@ -626,7 +639,7 @@ body{
 
               .text_area{
                   text-align: left;
-                  font-size: 17px;
+                  font-size: 15px;
                   line-height: 2;
                   letter-spacing: 0.375px;
                   line-height: 1.7;
@@ -918,14 +931,14 @@ body{
 
       img{
 
-        width: 77.2%;
+        width: 77.5%;
       }
 
       .card_title{
         margin: 29px 0 23px 0;
         font-size: 20px;
         color: #222222;
-        letter-spacing: 0.2px;
+        letter-spacing: 2px;
         font-weight: 900;
       }
 
@@ -934,6 +947,7 @@ body{
         text-align: left;
         letter-spacing: 0.75px;
         line-height: 1.8;
+        color: #222222;
       }
     }
 
@@ -1029,7 +1043,7 @@ body{
 
 
 .topic{
-    padding-top: 125px;
+    padding-top: 140px;
   
     @include sp(){
         padding-top: 66px;
@@ -1039,7 +1053,7 @@ body{
     &_wrap{
         width: 710px;
         margin: 0 auto;
-        padding-bottom: 130px;
+        padding-bottom: 137px;
   
         @include pc{
             width: 90%;
@@ -1055,9 +1069,9 @@ body{
             font-size: 45px;
             color: #222222;
             margin-bottom: 35px;
-            letter-spacing: 1.1px;
+            letter-spacing: 1.125px;
             text-align: center;
-            font-weight: 900;
+            font-weight: 800;
             font-family: 'Raleway', sans-serif;
   
             @include sp{
@@ -1067,7 +1081,7 @@ body{
   
   
         .article_wrap{
-            margin-bottom: 55.5px;
+            margin-bottom: 58.5px;
             
             @include sp(){
                 margin-bottom: 45px;
